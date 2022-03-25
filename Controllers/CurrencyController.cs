@@ -1,3 +1,4 @@
+using EmkPower.AddressApi.Currency;
 using EmkPower.AddressApi.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,34 +9,28 @@ namespace EmkPower.AddressApi.Controllers;
 public class CurrencyController : ControllerBase
 {
     private readonly ILogger<CurrencyController> _logger;
+    private readonly CurrencyService _currencyService;
 
-    public CurrencyController(ILogger<CurrencyController> logger)
+    public CurrencyController(ILogger<CurrencyController> logger, CurrencyService currencyService)
     {
         _logger = logger;
+        _currencyService = currencyService;
     }
 
     [HttpGet]
     [Route("convert/{baseCurrency}/{value}")]
-    public ActionResult<CurrencyResult> GetConvertedCurrency(string apiKey, string baseCurrency, decimal value)
+    public ActionResult<CurrencyResult> GetConvertedCurrency(string apiKey, Currencies baseCurrency, decimal value)
     {
-
-        if (!string.IsNullOrEmpty(baseCurrency))
+        try
         {
-            var result = new CurrencyResult();
-            result.Base = baseCurrency;
-            result.Values = new List<CurrencyRecord>()
-            {
-                new CurrencyRecord()
-                {
-                    CurrencyTitle = "USD",
-                    CurrencyValue = 15.50M
-                }
-            };
+            var result= _currencyService.ConvertCurrency(baseCurrency, value);
             return Ok(result);
-            
         }
-
-        return BadRequest("Eksik ya da hatali bir talepte bulundunuz");
+        catch 
+        {
+            return BadRequest("Eksik ya da hatali bir talepte bulundunuz");
+        }
+      
 
 
     }

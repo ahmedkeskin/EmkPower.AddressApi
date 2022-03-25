@@ -11,22 +11,22 @@
             {
               "id": 0,
               "title": "Merhaba Lokantasi",
-              "lat": 41.0000,
-              "lon": 41.0000,
+              "lat": 40.0000,
+              "lon": 40.0000,
               "description": "Cok lezzetli yemekleri var."
             },
             {
               "id": 1,
               "title": "Birinci Kasap",
-              "lat": 41.0001,
-              "lon": 41.0001,
+              "lat": 40.0001,
+              "lon": 40.0001,
               "description": "Etler gercekten cok guzel."
             },
             {
               "id": 2,
               "title": "Hayri Bakkal",
-              "lat": 41.0002,
-              "lon": 41.0002,
+              "lat": 40.0002,
+              "lon": 40.0002,
               "description": "Veresiye vardir."
             }
           ]
@@ -117,6 +117,304 @@
               "description": "Erkek adama hikâye gerisi"
             }
           ]
+        }
+      ]
+    }
+  ],
+  "crossRates": [
+    {
+      "baseCurrency": "TRY",
+      "rates": [
+        {
+          "CurrencyTitle": "TRY",
+          "CurrencyValue": 1.00
+        },
+        {
+          "CurrencyTitle": "USD",
+          "CurrencyValue": 0.0674
+        },
+        {
+          "CurrencyTitle": "EUR",
+          "CurrencyValue": 0.0611
+        },
+        {
+          "CurrencyTitle": "AUD",
+          "CurrencyValue": 0.0895
+        },
+        {
+          "CurrencyTitle": "JPY",
+          "CurrencyValue": 0.0815
+        },
+        {
+          "CurrencyTitle": "RUB",
+          "CurrencyValue": 6.6243
+        },
+        {
+          "CurrencyTitle": "CNY",
+          "CurrencyValue": 0.4266
+        },
+        {
+          "CurrencyTitle": "AED",
+          "CurrencyValue": 0.2462
+        }
+      ]
+    },
+    {
+      "baseCurrency": "USD",
+      "rates": [
+        {
+          "CurrencyTitle": "TRY",
+          "CurrencyValue": 0.00
+        },
+        {
+          "CurrencyTitle": "USD",
+          "CurrencyValue": 1.00
+        },
+        {
+          "CurrencyTitle": "EUR",
+          "CurrencyValue": 0.00
+        },
+        {
+          "CurrencyTitle": "AUD",
+          "CurrencyValue": 0.00
+        },
+        {
+          "CurrencyTitle": "JPY",
+          "CurrencyValue": 0.00
+        },
+        {
+          "CurrencyTitle": "RUB",
+          "CurrencyValue": 0.00
+        },
+        {
+          "CurrencyTitle": "CNY",
+          "CurrencyValue": 0.00
+        },
+        {
+          "CurrencyTitle": "AED",
+          "CurrencyValue": 0.00
+        }
+      ]
+    },
+    {
+      "baseCurrency": "EUR",
+      "rates": [
+        {
+          "CurrencyTitle": "TRY",
+          "CurrencyValue": 16.3304
+        },
+        {
+          "CurrencyTitle": "USD",
+          "CurrencyValue": 1.1002
+        },
+        {
+          "CurrencyTitle": "EUR",
+          "CurrencyValue": 1.00
+        },
+        {
+          "CurrencyTitle": "AUD",
+          "CurrencyValue": 1.4624
+        },
+        {
+          "CurrencyTitle": "JPY",
+          "CurrencyValue": 134.07 
+        },
+        {
+          "CurrencyTitle": "RUB",
+          "CurrencyValue": 117.2010
+        },
+        {
+          "CurrencyTitle": "CNY",
+          "CurrencyValue": 7.0007
+        },
+        {
+          "CurrencyTitle": "AED",
+          "CurrencyValue": 0.00
+        }
+      ]
+    },
+    {
+      "baseCurrency": "AUD",
+      "rates": [
+        {
+          "CurrencyTitle": "TRY",
+          "CurrencyValue": 0.00
+        },
+        {
+          "CurrencyTitle": "USD",
+          "CurrencyValue": 0.00
+        },
+        {
+          "CurrencyTitle": "EUR",
+          "CurrencyValue": 0.00
+        },
+        {
+          "CurrencyTitle": "AUD",
+          "CurrencyValue": 1.00
+        },
+        {
+          "CurrencyTitle": "JPY",
+          "CurrencyValue": 0.00
+        },
+        {
+          "CurrencyTitle": "RUB",
+          "CurrencyValue": 0.00
+        },
+        {
+          "CurrencyTitle": "CNY",
+          "CurrencyValue": 0.00
+        },
+        {
+          "CurrencyTitle": "AED",
+          "CurrencyValue": 0.00
+        }
+      ]
+    },
+    {
+      "baseCurrency": "JPY",
+      "rates": [
+        {
+          "CurrencyTitle": "TRY",
+          "CurrencyValue": 0.00
+        },
+        {
+          "CurrencyTitle": "USD",
+          "CurrencyValue": 0.00
+        },
+        {
+          "CurrencyTitle": "EUR",
+          "CurrencyValue": 0.00
+        },
+        {
+          "CurrencyTitle": "AUD",
+          "CurrencyValue": 0.00
+        },
+        {
+          "CurrencyTitle": "JPY",
+          "CurrencyValue": 1.00
+        },
+        {
+          "CurrencyTitle": "RUB",
+          "CurrencyValue": 0.00
+        },
+        {
+          "CurrencyTitle": "CNY",
+          "CurrencyValue": 0.00
+        },
+        {
+          "CurrencyTitle": "AED",
+          "CurrencyValue": 0.00
+        }
+      ]
+    },
+    {
+      "baseCurrency": "RUB",
+      "rates": [
+        {
+          "CurrencyTitle": "TRY",
+          "CurrencyValue": 0.00
+        },
+        {
+          "CurrencyTitle": "USD",
+          "CurrencyValue": 0.00
+        },
+        {
+          "CurrencyTitle": "EUR",
+          "CurrencyValue": 0.00
+        },
+        {
+          "CurrencyTitle": "AUD",
+          "CurrencyValue": 0.00
+        },
+        {
+          "CurrencyTitle": "JPY",
+          "CurrencyValue": 0.00
+        },
+        {
+          "CurrencyTitle": "RUB",
+          "CurrencyValue": 1.00
+        },
+        {
+          "CurrencyTitle": "CNY",
+          "CurrencyValue": 0.00
+        },
+        {
+          "CurrencyTitle": "AED",
+          "CurrencyValue": 0.00
+        }
+      ]
+    },
+    {
+      "baseCurrency": "CNY",
+      "rates": [
+        {
+          "CurrencyTitle": "TRY",
+          "CurrencyValue": 0.00
+        },
+        {
+          "CurrencyTitle": "USD",
+          "CurrencyValue": 0.00
+        },
+        {
+          "CurrencyTitle": "EUR",
+          "CurrencyValue": 0.00
+        },
+        {
+          "CurrencyTitle": "AUD",
+          "CurrencyValue": 0.00
+        },
+        {
+          "CurrencyTitle": "JPY",
+          "CurrencyValue": 0.00
+        },
+        {
+          "CurrencyTitle": "RUB",
+          "CurrencyValue": 0.00
+        },
+        {
+          "CurrencyTitle": "CNY",
+          "CurrencyValue": 1.00
+        },
+        {
+          "CurrencyTitle": "AED",
+          "CurrencyValue": 0.00
+        }
+      ]
+    },
+    {
+      "baseCurrency": "AED",
+      "rates": [
+        {
+          "CurrencyTitle": "TRY",
+          "CurrencyValue": 0.00
+        },
+        {
+          "CurrencyTitle": "USD",
+          "CurrencyValue": 0.00
+        },
+        {
+          "CurrencyTitle": "EUR",
+          "CurrencyValue": 0.00
+        },
+        {
+          "CurrencyTitle": "AUD",
+          "CurrencyValue": 0.00
+        },
+        {
+          "CurrencyTitle": "JPY",
+          "CurrencyValue": 0.00
+        },
+        {
+          "CurrencyTitle": "RUB",
+          "CurrencyValue": 0.00
+        },
+        {
+          "CurrencyTitle": "CNY",
+          "CurrencyValue": 0.00
+        },
+        {
+          "CurrencyTitle": "AED",
+          "CurrencyValue": 1.00
         }
       ]
     }

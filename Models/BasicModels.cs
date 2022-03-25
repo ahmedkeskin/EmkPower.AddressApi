@@ -1,4 +1,7 @@
-﻿namespace EmkPower.AddressApi.Models
+﻿using System.Text.Json.Serialization;
+using EmkPower.AddressApi.Currency;
+
+namespace EmkPower.AddressApi.Models
 {
     public class Address
     {
@@ -26,18 +29,34 @@
     public class Root
     {
         public List<City> Cities { get; set; }
+        public List<CrossRate> CrossRates { get; set; }
     }
 
+    public class CrossRate
+    {
+        public Currencies BaseCurrency { get; set; }
+        public List<CurrencyRecord> Rates { get; set; }
+
+    }
+    
     public class CurrencyResult
     {
-        public string Base { get; set; }
+        public Currencies Base { get; set; }
+        public decimal BaseValue { get; set; }
 
         public List<CurrencyRecord> Values { get; set; }
     }
 
     public class CurrencyRecord
     {
-        public string CurrencyTitle { get; set; }
+        public Currencies CurrencyTitle { get; set; }
         public decimal CurrencyValue { get; set; }
+    }
+
+    public class CrossCurrency
+    {
+        public Currencies BaseCurrency { get; set; }
+        public Currencies TargetCurrency { get; set; }
+        public decimal RateValue { get; set; }
     }
 }

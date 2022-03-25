@@ -1,5 +1,6 @@
 ﻿using EmkPower.AddressApi.Models;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace EmkPower.AddressApi.Mock
 {
@@ -7,6 +8,7 @@ namespace EmkPower.AddressApi.Mock
     {
 
         private readonly List<City> _cityList;
+        private readonly List<CrossRate> _rateList;
         public MockService()
         {
             var dbPath = Path.Combine(Environment.CurrentDirectory, "Mock", "mock-db.json");
@@ -14,9 +16,12 @@ namespace EmkPower.AddressApi.Mock
             var options = new JsonSerializerOptions
             {
                 PropertyNameCaseInsensitive = true,
+                Converters = { new JsonStringEnumConverter() }
             };
             var db = JsonSerializer.Deserialize<Root>(dbString, options);
             _cityList = db.Cities;
+            _rateList = db.CrossRates;
+
         }
         public List<City> GetCities()
         {
@@ -65,5 +70,10 @@ namespace EmkPower.AddressApi.Mock
             city.DistrictList.Add(district);
             return city;
         }
+
+        public List<CrossRate> GetCrossRates()
+        {
+            return _rateList;
+        }   
     }
 }
