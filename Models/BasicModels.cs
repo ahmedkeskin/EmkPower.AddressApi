@@ -8,20 +8,36 @@
         public double Lon { get; set; }
         public string Description { get; set; }
     }
+
     public class District
     {
         public int Id { get; set; }
         public string Name { get; set; }
         public List<Address> AddressList { get; set; }
     }
+
     public class City
     {
         public int Id { get; set; }
         public string Name { get; set; }
         public List<District> DistrictList { get; set; }
     }
+
     public class Root
     {
         public List<City> Cities { get; set; }
+    }
+
+    public class CurrencyResult
+    {
+        public string Base { get; set; }
+
+        public List<CurrencyRecord> Values { get; set; }
+    }
+
+    public class CurrencyRecord
+    {
+        public string CurrencyTitle { get; set; }
+        public decimal CurrencyValue { get; set; }
     }
 }
