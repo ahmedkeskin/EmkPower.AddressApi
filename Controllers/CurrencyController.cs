@@ -19,7 +19,7 @@ public class CurrencyController : ControllerBase
     public ActionResult<CurrencyResult> GetConvertedCurrency(string apiKey, string baseCurrency, decimal value)
     {
 
-        if (string.IsNullOrEmpty(baseCurrency))
+        if (!string.IsNullOrEmpty(baseCurrency))
         {
             var result = new CurrencyResult();
             result.Base = baseCurrency;
